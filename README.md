@@ -1,0 +1,2 @@
+# canvasSignature
+canvasSignature是基于html5 canvas及jquery实现手写签名（电子签名）功能的js组件

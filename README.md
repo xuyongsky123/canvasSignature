@@ -24,7 +24,7 @@
 </p>
 ```html
 <canvas id="test" width="500" height="300">
-您的浏览器当前不支持canvas画布，请更换别的浏览器进行签名操作
+    您的浏览器当前不支持canvas画布，请更换别的浏览器进行签名操作
 </canvas>
 ```
 

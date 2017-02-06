@@ -1,0 +1,60 @@
+@charset "utf-8";
+/*
+//author relaxWang begin 2015/12
+//last modify 2016/12/13
+//Version 0.15
+//移动端样式定义，兼容PC端浏览器
+*/
+
+/* reset */
+*{ /*font-family:"Microsoft YaHei","微软雅黑","Helvetica Neue",Helvetica,STHeiTi,sans-serif;*/ font-family:tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-seri; box-sizing:border-box;}
+html,body,h1,h2,h3,h4,h5,h6,dl,dt,dd,p,ul,li,form,iframe,object,input{ margin:0px; padding:0px;}
+a{ text-decoration:none;}
+h1,h2,h3,h4,h5,h6,strong{ font-weight:bold;}
+ul,ol,dl{list-style: none outside none;}
+input,textarea,select{ font-family:inherit;}
+a:active, a:focus, input:active, input:focus, button:active, button:focus{ outline:none; -moz-outline:none;} /*去掉移动端firefox a标签的虚线框 PC chrome文本输入框的边框焦点时候的颜色 */
+input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner{ border:none;} /*去掉移动端firefox 按钮获得焦点显示虚线框的样式 */
+table { border-collapse:collapse; border-spacing:0; width:100%;}
+html,body{ position:relative; height:100%; width:100%;}  /* 注意 某些版本的IE中（IE9）会导致iframe的内容定位错误，请参考是否去掉该属性，或者为iframe增加relative的属性 */
+iframe{ width:100%; height:100%; position:relative;}
+/* 清除现代IE浏览器的输入框和密码框的默认交互按钮 */
+::-ms-clear, ::-ms-reveal{display: none;}
+/* 针对不支持语义化标签浏览器做的应对*/
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block}
+/* chrome内核浏览器对cursor:pointer的样式对象，点击触发样式中会有浅蓝色背景框，用该样式去除 */
+/* -webkit-tap-highlight-color:rgba(255,255,255,0); */
+/* reset end */
+
+
+body {min-width: 1280px;}
+.container {padding:30px 50px 100px;}
+.container h3 {margin:10px 0;}
+.container h2 {height: 36px;line-height: 36px;margin:20px 0;}
+.container a {margin-left:20px;color: #428bca;font-size: 16px;font-weight: 700;}
+.container a:hover {color: #2a6496;text-decoration: underline;}
+pre {background-color: #f5f5f5;border:1px solid #ccc;padding:10px;overflow: auto;color: #c82829;}
+pre span {color: #718c00;}
+pre span.b {color: #0086b3;}
+p {padding-left: 50px;}
+p a {color: #428bca;}
+p a:hover {color: #2a6496;text-decoration: underline;}
+table {width: 90%;background-color: #eaeff2;}
+table tr th {padding: 10px;}
+table tr td {padding:10px 10px 10px 20px;background-color: #fff;border:1px solid #eaeff2;}
+table tr td:first-child {background-color: #eaeff2;border-color: #fff;}
+.paramItem {overflow: hidden;}
+.paramItem > strong {display:block;font-weight:normal;color:#fff;padding:5px 10px;background-color: #39A4DC;margin:10px 0;}
+.paramItem > div {overflow: hidden;}
+
+canvas {border:1px solid #ccc;}
+img {border:1px solid #ccc;}
+button {padding:5px 15px;border:1px solid #ccc;color:#666;background-color: #fff;border-radius: 6px;}
+
+
+
+
+
+
+
+

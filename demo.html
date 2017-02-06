@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>  
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>canvasSignature.js实现手写签名</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+	<script type="text/javascript" src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/canvasSignature.js"></script>
+</head>
+<body>
+	<div class="container">
+		
+		<h2>手写签名实现(canvasSignature.js)使用示例</h2>
+	    <div class="paramItem">
+	    	<strong>以下为手写签名区域</strong>
+	    </div>
+	    <canvas id="signName" width="500" height="300">
+	        您的浏览器当前不支持canvas画布，请更换别的浏览器进行签名操作
+	    </canvas>
+	    <button id="clearCanvas">重写</button>
+	    <button id="createImage">生成图片</button>
+	    <br/>
+	    <div class="paramItem">
+	    	<strong>生成图片如下：</strong>
+	    </div>
+	    <img id="newImage" src="" />
+		
+	</div>
+
+</body>
+<script>
+$(function(){
+	//初始化签名样式（这里仅支持一个签名，如需多个签名框需改写组件）
+	$('#signName').canvasSignature({
+		fillStyle:'transparent',	//生成图片背景色，默认为透明
+		lineWidth:10,	//笔画粗细（尺寸），默认为四像素粗细
+		strokeStyle:'red'	//笔画颜色，默认为黑色
+	});
+
+	//清除重写
+	$('#clearCanvas').on('click',function(){
+		//清除重写调用方式
+		$('#signName').clearSignature();
+	});
+
+	//生成图片
+	$('#createImage').on('click',function(){
+		//生成图片格式base64包括：jpg、png格式
+		console.log($('#signName').createSignature('png'));
+		$('#newImage').attr('src',$('#signName').createSignature('png'));
+	});
+
+});
+</script>
+</html>

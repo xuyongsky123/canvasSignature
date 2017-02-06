@@ -34,9 +34,9 @@
 </p>
 ```javascript
 $('#test').canvasSignature({
-  fillStyle:'transparent',	//生成图片背景色，默认为透明
-  lineWidth:10,	//笔画粗细（尺寸），默认为四像素粗细
-  strokeStyle:'red'	//笔画颜色，默认为黑色
+    fillStyle:'transparent',	//生成图片背景色，默认为透明
+    lineWidth:10,	//笔画粗细（尺寸），默认为四像素粗细
+    strokeStyle:'red'	//笔画颜色，默认为黑色
 });
 ```
 <p>
@@ -67,9 +67,9 @@ $('#test').createSignature('png');
       lineWidth：笔画粗细（尺寸），默认为四像素粗细(数字)<br/>
       strokeStyle：笔画颜色，默认为黑色(字符串)<br/>
       注意：参数是以对象形式传入，如:<pre>$('#test').canvasSignature({
-fillStyle:'transparent',	//生成图片背景色，默认为透明
-lineWidth:10,	//笔画粗细（尺寸），默认为四像素粗细
-strokeStyle:'red'	//笔画颜色，默认为黑色
+    fillStyle:'transparent',	//生成图片背景色，默认为透明
+    lineWidth:10,	//笔画粗细（尺寸），默认为四像素粗细
+    strokeStyle:'red'	//笔画颜色，默认为黑色
 });</pre>
     </td>
     <td>初始化签名框（主要）</td>

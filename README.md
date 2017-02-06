@@ -13,7 +13,7 @@
 <p>
   我们需要在页面中引入关键js：
 </p>
-```
+```html
 <script type="text/javascript" src="....../canvasSignature.js"></script>
 ```
 
